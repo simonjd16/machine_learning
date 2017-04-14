@@ -10,13 +10,15 @@ The goal of this project is to use the publicly available Enron financial and em
 
 #### Data Exploration
 
-*Total Number of data points:
+- Total Number of data points:
 
-*Allocation across classes (POI/Non-POI)
+- Allocation across classes (POI/Non-POI)
 
-*Number of features used
+- Number of features used
 
-*Features with missing values
+- Features with missing values
+
+
 
 #### Outlier Investigation
 
