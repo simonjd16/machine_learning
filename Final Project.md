@@ -12,10 +12,12 @@ The goal of this project is to use the publicly available Enron financial and em
 
 #### Allocation across classes (POI/Non-POI)
 
-- Employees: There are 146 Enron employees within the public data sets. Out of these 146 18 of them are POI's.
+- Employees: There are 146 Enron employees within the public data sets. Out of these 146, 18 of them are POI's.
 
 #### Number of features
 
+- POI feature: There is one boolean feature to identify if a particular employee is a POI or not
+  - poi
 - Financial features: There are 14 features within the financial data set. The currency for all units are in USD
   - salary
   - deferral_payments
