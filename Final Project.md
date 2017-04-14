@@ -10,11 +10,39 @@ The goal of this project is to use the publicly available Enron financial and em
 
 ### Data Exploration
 
-#### Total Number of data points:
+#### Total Number of data points
+
+- Employees: There are 146 Enron employees within the public data sets. Out of these 146 18 of them are POI's.
 
 #### Allocation across classes (POI/Non-POI)
 
-#### Number of features used
+
+
+#### Number of features
+
+- Financial features: There are 14 features within the financial data set. The currency for all units are in USD
+  - salary
+  - deferral_payments
+  - total_payments
+  - load_advances
+  - bonus
+  - restricted_stock_deferred
+  - deferred_income
+  - total_stock_value
+  - expenses
+  - exercised_stock_options
+  - other
+  - long_term_incentive
+  - restricted_stock
+  - director_fees
+  
+- Email features: There are 6 features within the email data set.
+  - to_messages
+  - email_address
+  - from_poi_to_this_person
+  - from_messages
+  - from_this_person_to_poi
+  - shared_receipt_with_poi
 
 #### Features with missing values
 
