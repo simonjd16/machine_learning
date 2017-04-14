@@ -8,3 +8,16 @@ At it's height, Enron Corporation was one of the worlds largest electircity, nat
 
 The goal of this project is to use the publicly available Enron financial and email datasets to identify individuals who may of comnmited fraud. During the project, these individuals will be known as persons of interest (POI's) who by definition were "individuals who were indicted, reached a settlement, or plea deal with the government, or testified in exchange for prosecution immunity"
 
+#### Data Exploration
+
+-Total Number of data points:
+
+-Allocation across classes (POI/Non-POI)
+
+-Number of features used
+
+-Features with missing values
+
+#### Outlier Investigation
+
+
