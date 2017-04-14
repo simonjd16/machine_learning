@@ -10,13 +10,9 @@ The goal of this project is to use the publicly available Enron financial and em
 
 ### Data Exploration
 
-#### Total Number of data points
-
-- Employees: There are 146 Enron employees within the public data sets. Out of these 146 18 of them are POI's.
-
 #### Allocation across classes (POI/Non-POI)
 
-
+- Employees: There are 146 Enron employees within the public data sets. Out of these 146 18 of them are POI's.
 
 #### Number of features
 
