@@ -48,4 +48,6 @@ The goal of this project is to use the publicly available Enron financial and em
 
 #### Outlier Investigation
 
+Based on the work completed in previous lessons running to the completion of this project, we identified a speadsheet querk where a row labelled "TOTAL" was being included. I used data_dict.pop to remove this outlier. 
 
+Upon reviewing the FindLaw insider pay pdf, there was also one additonal row which for "THE TRAVEL AGENCY IN THE PARK" These were not payments to a specific individual but payments on an account of business-related travel. I have also excluded these payments again using data_dict.pop.
