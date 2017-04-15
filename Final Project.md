@@ -48,7 +48,7 @@ Using list comprehension I reviewed all 21 features within the dataset.
 
 From the financial features (including the POI identifier) all features apart from the POI identifier had missing values present. The 3 features with the lowest population were loan_advances (2.74% population), director_fees (11.64% population) and restricted_stock_deferred (12.33% population) 
 
-From the email features, all features have missing values present. All features have above 58.90% population.
+From the email features, all features have missing values present, but all features have above 58.90% population.
 
 #### Outlier Investigation
 
