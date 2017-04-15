@@ -62,5 +62,5 @@ Upon reviewing the FindLaw insider pay pdf, there was also one additonal row whi
 
 I decided to engineer 2 features into the data sets primarily focused around the final aspects of the data.
 
-- expenses_to_salary - I decided to look at the
-- stock_value_to_salary
+- expenses_to_salary: I decided to look at the ratio between the amount of expenses the employee claimed and their salary. I wanted to explore if there may have been anything peculiar going on with the expenses for employees receiving lower salaries
+- stock_value_to_salary: In the same way as the expenses_to_salary ratio, I also decided to explore if there was any significance between the total stock value an employee had versus their salary
