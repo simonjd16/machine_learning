@@ -62,5 +62,5 @@ Upon reviewing the FindLaw insider pay pdf, there was also one additonal row whi
 
 I decided to engineer 2 features into the data sets primarily focused around the final aspects of the data.
 
-- expenses_to_salary
+- expenses_to_salary - I decided to look at the
 - stock_value_to_salary
