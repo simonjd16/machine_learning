@@ -58,8 +58,19 @@ Upon reviewing the FindLaw insider pay pdf, there was also one additional row wh
 
 ## 2. What features did you end up using in your POI identifier, and what selection process did you use to pick them? Did you have to do any scaling? Why or why not? As part of the assignment, you should attempt to engineer your own feature that does not come ready-made in the dataset -- explain what feature you tried to make, and the rationale behind it. (You do not necessarily have to use it in the final analysis, only engineer and test it.) In your feature selection step, if you used an algorithm like a decision tree, please also give the feature importances of the features that you use, and if you used an automated feature selection function like SelectKBest, please report the feature scores and reasons for your choice of parameter values.  [relevant rubric items: “create new features”, “properly scale features”, “intelligently select feature”]
 
+#### Methodology for selection process
+
+
+
 #### Features Selected in POI identifier
 
+The 5 features I selected are sorted in order of importance below. The values following the feature names are the feature importance followed by the feature score:
+
+- feature no. 1: bonus (0.716358632315) (0.00998239958969)
+- feature no. 2: exercised_stock_options (0.283641367685) (7.03793279819)
+- feature no. 3: shared_receipt_with_poi (0.0) (30.7287746334)
+- feature no. 4: total_stock_value (0.0) (8.95913664769)
+- feature no. 5: salary (0.0) (15.858730906)
 
 #### Use of Scaling
 
