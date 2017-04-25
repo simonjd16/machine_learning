@@ -62,6 +62,7 @@ Upon reviewing the FindLaw insider pay pdf, there was also one additional row wh
 
 
 
+
 #### Features Selected in POI identifier
 
 The 5 features I selected are sorted in order of importance below. The values following the feature names are the feature importance followed by the feature score:
