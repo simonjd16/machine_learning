@@ -58,10 +58,26 @@ Upon reviewing the FindLaw insider pay pdf, there was also one additional row wh
 
 ## 2. What features did you end up using in your POI identifier, and what selection process did you use to pick them? Did you have to do any scaling? Why or why not? As part of the assignment, you should attempt to engineer your own feature that does not come ready-made in the dataset -- explain what feature you tried to make, and the rationale behind it. (You do not necessarily have to use it in the final analysis, only engineer and test it.) In your feature selection step, if you used an algorithm like a decision tree, please also give the feature importances of the features that you use, and if you used an automated feature selection function like SelectKBest, please report the feature scores and reasons for your choice of parameter values.  [relevant rubric items: “create new features”, “properly scale features”, “intelligently select feature”]
 
+#### Features Selected in POI identifier
+
+
+#### Use of Scaling
+
+
 #### Features Engineered
 
 I decided to engineer 2 features into the data sets primarily focused around the final aspects of the data.
 
 - expenses_to_salary: I decided to look at the ratio between the amount of expenses the employee claimed and their salary. I wanted to explore if there may have been anything peculiar going on with the expenses for employees receiving lower salaries
 - stock_value_to_salary: In the same way as the expenses_to_salary ratio, I also decided to explore if there was any significance between the total stock value an employee had versus their salary
+
+## 3. What algorithm did you end up using? What other one(s) did you try? How did model performance differ between algorithms?  [relevant rubric item: “pick an algorithm”]
+
+
+## 4. What does it mean to tune the parameters of an algorithm, and what can happen if you don’t do this well?  How did you tune the parameters of your particular algorithm? (Some algorithms do not have parameters that you need to tune -- if this is the case for the one you picked, identify and briefly explain how you would have done it for the model that was not your final choice or a different model that does utilize parameter tuning, e.g. a decision tree classifier).  [relevant rubric item: “tune the algorithm”]
+
+## 5. What is validation, and what’s a classic mistake you can make if you do it wrong? How did you validate your analysis?  [relevant rubric item: “validation strategy”]
+
+## 6. Give at least 2 evaluation metrics and your average performance for each of them.  Explain an interpretation of your metrics that says something human-understandable about your algorithm’s performance. [relevant rubric item: “usage of evaluation metrics”]
+
 
