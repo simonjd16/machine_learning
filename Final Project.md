@@ -60,7 +60,7 @@ Upon reviewing the FindLaw insider pay pdf, there was also one additional row wh
 
 #### Methodology for selection process
 
-
+The methodology I adopted for feature selection was a univariate selection process using select k-best from sklean. I used the k-best selection within a pipeline that included grid search to select the best features to use. The goal of this selection process was to maximise precision as well as recall.
 
 
 #### Features Selected in POI identifier
