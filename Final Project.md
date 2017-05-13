@@ -4,9 +4,9 @@
 
 ## 1. Summarize for us the goal of this project and how machine learning is useful in trying to accomplish it. As part of your answer, give some background on the dataset and how it can be used to answer the project question. Were there any outliers in the data when you got it, and how did you handle those?  [relevant rubric items: “data exploration”, “outlier investigation”]
 
-At its height, Enron Corporation was one of the world's largest electricity, natural gas, communications and pulp and paper companies employing around 20,000 staff and reporting revenues of over $100 billion. This all collapse  in the run up to the corporation declaring bankruptcy on December 2nd, 2001. The collapse was primarily instigated by institutionalised, systematic and creatively planned accounting fraud.
+At its height, Enron Corporation was one of the world's largest electricity, natural gas, communications and pulp and paper companies employing around 20,000 staff and reporting revenues of over $100 billion. This all collapse in the run up to the corporation declaring bankruptcy on December 2nd, 2001. The collapse was primarily instigated by institutionalised, systematic and creatively planned accounting fraud.
 
-The goal of this project is to use the publicly available Enron financial and email datasets to identify individuals who may have committed fraud. During the project, these individuals will be known as persons of interest (POI's) who by definition were "individuals who were indicted, reached a settlement, or plea deal with the government, or testified in exchange for prosecution immunity"
+The goal of this project is to use the publicly available Enron financial and email datasets to identify individuals who may have committed fraud. During the project, these individuals will be known as persons of interest (POI's) who were "individuals who were indicted, reached a settlement, or plea deal with the government, or testified in exchange for prosecution immunity"
 
 ### Data Exploration
 
@@ -62,7 +62,6 @@ Upon reviewing the FindLaw insider pay pdf, there was also one additional row wh
 
 The methodology I adopted for feature selection was a univariate selection process using select k-best from sklean. I used the k-best selection within a pipeline that included grid search to select the best features to use. The goal of this selection process was to maximise precision as well as recall.
 
-
 #### Features Selected in POI identifier
 
 The 5 features I selected are sorted in order of importance below. The values following the feature names are the feature importance followed by the feature score:
@@ -75,7 +74,7 @@ The 5 features I selected are sorted in order of importance below. The values fo
 
 #### Use of Scaling
 
-The only algorithm that I used scaling for was the the k-nearest neighbours algorithm. The logic behind using scaling was that we needed to measure the distances between our sample pairs which impacts the clustering when determining the nearest neighbours.
+The only algorithm that I used scaling for was the k-nearest neighbours algorithm. The logic behind using scaling was that we needed to measure the distances between our sample pairs which impacts the clustering when determining the nearest neighbours.
 
 #### Features Engineered
 
