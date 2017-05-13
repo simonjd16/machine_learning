@@ -75,11 +75,11 @@ The 5 features I selected are sorted in order of importance below. The values fo
 
 #### Use of Scaling
 
-
+The only algorithm that I used scaling for was the the k-nearest neighbours algorithm. The logic behind using scaling was that we needed to measure the distances between our sample pairs which impacts the clustering when determining the nearest neighbours.
 
 #### Features Engineered
 
-I decided to engineer 2 features into the data sets primarily focused around the final aspects of the data.
+I decided to engineer 2 features into the data sets primarily focused around the final aspects of the data. 
 
 - expenses_to_salary: I decided to look at the ratio between the amount of expenses the employee claimed and their salary. I wanted to explore if there may have been anything peculiar going on with the expenses for employees receiving lower salaries
 - stock_value_to_salary: In the same way as the expenses_to_salary ratio, I also decided to explore if there was any significance between the total stock value an employee had versus their salary
