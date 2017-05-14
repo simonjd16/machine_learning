@@ -85,6 +85,12 @@ I decided to engineer 2 features into the data sets primarily focused around the
 
 ## 3. What algorithm did you end up using? What other one(s) did you try? How did model performance differ between algorithms?  [relevant rubric item: “pick an algorithm”]
 
+Within this project I chose to look at the below 3 algorithms:
+
+- Naive Bayes
+- k-nearest neighbours
+- Decision Tree
+
 
 
 ## 4. What does it mean to tune the parameters of an algorithm, and what can happen if you don’t do this well?  How did you tune the parameters of your particular algorithm? (Some algorithms do not have parameters that you need to tune -- if this is the case for the one you picked, identify and briefly explain how you would have done it for the model that was not your final choice or a different model that does utilize parameter tuning, e.g. a decision tree classifier).  [relevant rubric item: “tune the algorithm”]
