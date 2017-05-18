@@ -64,13 +64,13 @@ The methodology I adopted for feature selection was a univariate selection proce
 
 #### Features Selected in POI identifier
 
-The 5 features I selected are sorted in order of importance below. The values following the feature names are the feature importance followed by the feature score:
+The 5 features I selected are sorted in order of importance below. The values following the feature names are the feature importance followed by the feature score. Interestingly the top feature is one of the engineers features that I will explain in the Features Engineered section below:
 
-- feature no. 1: bonus (0.716358632315) (0.00998239958969)
-- feature no. 2: exercised_stock_options (0.283641367685) (7.03793279819)
-- feature no. 3: shared_receipt_with_poi (0.0) (30.7287746334)
-- feature no. 4: total_stock_value (0.0) (8.95913664769)
-- feature no. 5: salary (0.0) (15.858730906)
+- feature no. 1: bonus_proportion (0.446231105314) (1.55371129565)
+- feature no. 2: salary (0.349990254917) (5.98414539726)
+- feature no. 3: total_stock_value (0.203778639769) (2.34570305219)
+- feature no. 4: shared_receipt_with_poi (0.0) (0.126765500583)
+- feature no. 5: bonus (0.0) (6.30493093462)
 
 #### Use of Scaling
 
@@ -78,10 +78,11 @@ The only algorithm that I used scaling for was the k-nearest neighbours algorith
 
 #### Features Engineered
 
-I decided to engineer 2 features into the data sets primarily focused around the final aspects of the data. 
+I decided to engineer 3 features into the data set, primarily focused around the financial aspects of the data. 
 
 - expenses_to_salary: I decided to look at the ratio between the amount of expenses the employee claimed and their salary. I wanted to explore if there may have been anything peculiar going on with the expenses for employees receiving lower salaries
 - stock_value_to_salary: In the same way as the expenses_to_salary ratio, I also decided to explore if there was any significance between the total stock value an employee had versus their salary
+- bonus_proportion: The final feature I engineered was the proportion the bonus made up of the salary. I thought that would be interesting to look at any significance around this proportion
 
 ## 3. What algorithm did you end up using? What other one(s) did you try? How did model performance differ between algorithms?  [relevant rubric item: “pick an algorithm”]
 
