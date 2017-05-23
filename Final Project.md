@@ -64,13 +64,13 @@ The methodology I adopted for feature selection was a univariate selection proce
 
 #### Features Selected in POI identifier
 
-The 5 features I selected are sorted in order of importance below. The values following the feature names are the feature importance followed by the feature score. Interestingly the top feature is one of the engineers features that I will explain in the Features Engineered section below:
+The 5 features I selected are sorted in order of importance below. The values following the feature names are the feature importance followed by the feature score. Interestingly, out of the top 5 features, two are engineered features that I will explain in the Features Engineered section below:
 
-- feature no. 1: bonus_proportion (0.446231105314) (1.55371129565)
-- feature no. 2: salary (0.349990254917) (5.98414539726)
-- feature no. 3: total_stock_value (0.203778639769) (2.34570305219)
-- feature no. 4: shared_receipt_with_poi (0.0) (0.126765500583)
-- feature no. 5: bonus (0.0) (6.30493093462)
+- No. 1: email_to_poi_proportion (0.606946942619) (5.26019658836)
+- No. 2: salary (0.277331868737) (10.3004669247)
+- No. 3: shared_receipt_with_poi (0.115721188644) (5.41515058272)
+- No. 4: bonus_proportion (0.0) (7.33972137521)
+- No. 5: bonus (0.0) (9.14894316352)
 
 #### Use of Scaling
 
@@ -78,11 +78,12 @@ The only algorithm that I used scaling for was the k-nearest neighbours algorith
 
 #### Features Engineered
 
-I decided to engineer 3 features into the data set, primarily focused around the financial aspects of the data. 
+I decided to engineer 4 features into the data set, primarily focused around the financial aspects of the data but with one based on the email features. 
 
 - expenses_to_salary: I decided to look at the ratio between the amount of expenses the employee claimed and their salary. I wanted to explore if there may have been anything peculiar going on with the expenses for employees receiving lower salaries
 - stock_value_to_salary: In the same way as the expenses_to_salary ratio, I also decided to explore if there was any significance between the total stock value an employee had versus their salary
-- bonus_proportion: The final feature I engineered was the proportion the bonus made up of the salary. I thought that would be interesting to look at any significance around this proportion
+- bonus_proportion: The final financial feature I engineered was the proportion the bonus made up of the salary. I thought that would be interesting to look at any significance around this proportion
+- email_to_poi_proportion: For this feature, I decided to apply a similar proportion that I did in the bonus_proportion feature but to the email data. I looked at the number of messages from this person to poi as a proportion of all from messages
 
 ## 3. What algorithm did you end up using? What other one(s) did you try? How did model performance differ between algorithms?  [relevant rubric item: “pick an algorithm”]
 
@@ -92,9 +93,54 @@ Within this project I chose to look at the below 3 algorithms:
 - k-nearest neighbours
 - Decision Tree
 
+After exhaustive testing, the algorithm I ended up using was a Decision Tree. After tuning the Decision Tree algorithm I ended up with the following results:
 
+- Accuracy: 0.82117	
+- Precision: 0.47328	
+- Recall: 0.64650	
+- Total predictions: 12000	
+- True positives: 1293	
+- False positives: 1439	
+- False negatives:  707	
+- True negatives: 8561
+
+The Decision Tree achieved the best results based on the tuning I applied. The other algorithms that I tuned and tested returned the following results:
+
+Naive Bayes
+- Accuracy: 0.84214	
+- Precision: 0.42391	
+- Recall: 0.29250
+- Total predictions: 14000	
+- True positives:  585	
+- False positives:  795	
+- False negatives: 1415	
+- True negatives: 11205
+
+k-nearest neighbours
+- Accuracy: 0.84950	
+- Precision: 0.36591	
+- Recall: 0.07300
+- Total predictions: 14000	
+- True positives:  146	
+- False positives:  253	
+- False negatives: 1854	
+- True negatives: 11747
+
+From the above results the Naive Bayes and k-nearest neighbours algorithms achieved a slightly higher accuracy than the Decision Tree algorithm, however for both of these algrothims, I struggled to get an acceptable level of precision and recall.
 
 ## 4. What does it mean to tune the parameters of an algorithm, and what can happen if you don’t do this well?  How did you tune the parameters of your particular algorithm? (Some algorithms do not have parameters that you need to tune -- if this is the case for the one you picked, identify and briefly explain how you would have done it for the model that was not your final choice or a different model that does utilize parameter tuning, e.g. a decision tree classifier).  [relevant rubric item: “tune the algorithm”]
+
+The meaning of tuning an algorithm is going through a process of testing and adjusting the parameters of an algorithm to hone and improve the performance of the algorithm. Without tuning the algorithm will use the default value for the parameters in most cases leading to a poorer peformance than a tuned algorithm.
+
+With this project, I used GridSearchCV, which is one method for helping to choose the best value for the parameters. With this method you feed each parameters a list of possible values and grid search goes through all combinations and provides the user with feedback on the best combinations. In some cases this can take a bit longer than other methods but as it is exhaustive it really does improve the tuning of the algroithm. 
+
+When tuning my chosen decision tree algorith, using grid search allowed me to choose a different value than the default for the following features
+- criterion=['gini']
+- max_depth=[2]
+- min_samples_split=[2]
+- class_weight=['balanced']
+- presort=[True]
+- random_state=[42]
 
 ## 5. What is validation, and what’s a classic mistake you can make if you do it wrong? How did you validate your analysis?  [relevant rubric item: “validation strategy”]
 
