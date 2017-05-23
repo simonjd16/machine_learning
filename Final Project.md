@@ -144,6 +144,10 @@ When tuning my chosen decision tree algorithm, using grid search allowed me to c
 
 ## 5. What is validation, and what’s a classic mistake you can make if you do it wrong? How did you validate your analysis?  [relevant rubric item: “validation strategy”]
 
+In relation to machine learning, validation is a way to gauge how your algorithm is performing which is all based on how well you trained it. As we have seen in various examples throughout the machine learning course, the most common mistake is to test to algorithm on the same data that was used to train it. To ensure that was not the case within this project, we split the data into a training and testing data set with 70% being training data and 30% being testing data. This was undertaken using train_test_split and setting the test_size=0.3.
+
+While training and testing my algorithm, I used the tester.py to get a view on how my chosen algorithm was performing and validate my analysis. This was achieved in part using StratifiedShuffleSplit. The tester.py file also allowed me to validate the performance during tuning and ended up giving me the results I have detailed earlier.
+
 ## 6. Give at least 2 evaluation metrics and your average performance for each of them.  Explain an interpretation of your metrics that says something human-understandable about your algorithm’s performance. [relevant rubric item: “usage of evaluation metrics”]
 
 
