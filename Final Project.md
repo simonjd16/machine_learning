@@ -150,4 +150,7 @@ While training and testing my algorithm, I used the tester.py to get a view on h
 
 ## 6. Give at least 2 evaluation metrics and your average performance for each of them.  Explain an interpretation of your metrics that says something human-understandable about your algorithm’s performance. [relevant rubric item: “usage of evaluation metrics”]
 
+When evaluating my chosen algorithms performance, the 2 key evaluation metrics were Precision and Recall. The averages for my chosen decision tree algorithms were:
+- Precision: 0.47328	
+- Recall: 0.64650	
 
