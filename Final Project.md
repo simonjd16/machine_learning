@@ -153,4 +153,4 @@ While training and testing my algorithm, I used the tester.py to get a view on h
 When evaluating my chosen algorithms performance, the 2 key evaluation metrics were Precision and Recall. The averages for my chosen decision tree algorithms were:
 - Precision: 0.47328	
 - Recall: 0.64650	
-
+Putting these into context around the scope of our project, precision is the rate that our prediction for POI vs Non POI is correct when we actually guess that. When it comes to recall, this shows how often we guess POI vs Non POI when that guess actually occurred.
