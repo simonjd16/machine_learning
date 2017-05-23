@@ -126,15 +126,15 @@ k-nearest neighbours
 - False negatives: 1854	
 - True negatives: 11747
 
-From the above results the Naive Bayes and k-nearest neighbours algorithms achieved a slightly higher accuracy than the Decision Tree algorithm, however for both of these algrothims, I struggled to get an acceptable level of precision and recall.
+From the above results the Naive Bayes and k-nearest neighbours algorithms achieved a slightly higher accuracy than the Decision Tree algorithm, however for both of these algorithms, I struggled to get an acceptable level of precision and recall.
 
 ## 4. What does it mean to tune the parameters of an algorithm, and what can happen if you don’t do this well?  How did you tune the parameters of your particular algorithm? (Some algorithms do not have parameters that you need to tune -- if this is the case for the one you picked, identify and briefly explain how you would have done it for the model that was not your final choice or a different model that does utilize parameter tuning, e.g. a decision tree classifier).  [relevant rubric item: “tune the algorithm”]
 
-The meaning of tuning an algorithm is going through a process of testing and adjusting the parameters of an algorithm to hone and improve the performance of the algorithm. Without tuning the algorithm will use the default value for the parameters in most cases leading to a poorer peformance than a tuned algorithm.
+The meaning of tuning an algorithm is going through a process of testing and adjusting the parameters of an algorithm to hone and improve the performance of the algorithm. Without tuning the algorithm will use the default value for the parameters in most cases leading to a poorer performance than a tuned algorithm.
 
-With this project, I used GridSearchCV, which is one method for helping to choose the best value for the parameters. With this method you feed each parameters a list of possible values and grid search goes through all combinations and provides the user with feedback on the best combinations. In some cases this can take a bit longer than other methods but as it is exhaustive it really does improve the tuning of the algroithm. 
+With this project, I used GridSearchCV, which is one method for helping to choose the best value for the parameters. With this method you feed each parameters a list of possible values and grid search goes through all combinations and provides the user with feedback on the best combinations. In some cases this can take a bit longer than other methods but as it is exhaustive it really does improve the tuning of the algorithm. 
 
-When tuning my chosen decision tree algorith, using grid search allowed me to choose a different value than the default for the following features
+When tuning my chosen decision tree algorithm, using grid search allowed me to choose a different value than the default for the following features
 - criterion=['gini']
 - max_depth=[2]
 - min_samples_split=[2]
