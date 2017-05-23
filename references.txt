@@ -1,0 +1,15 @@
+Univariate Feature Selection in scikit learn: http://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection.html
+Feature Selection in scikit learn: http://scikit-learn.org/stable/modules/feature_selection.html
+Feature Scaling: http://sebastianraschka.com/Articles/2014_about_feature_scaling.html
+Selection of good features: http://blog.datadive.net/selecting-good-features-part-i-univariate-selection/
+Select K Best in scikit learn: http://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.SelectKBest.html
+Pipeline scikit learn: http://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html
+Grid-search scikit learn: http://scikit-learn.org/stable/tutorial/statistical_inference/model_selection.html
+Grid-search scikit learn: http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
+Tune Algorithm Parameters with scikit learn: http://machinelearningmastery.com/how-to-tune-algorithm-parameters-with-scikit-learn/
+When to apply scaling: https://stats.stackexchange.com/questions/121886/when-should-i-apply-feature-scaling-for-my-data
+StratifiedShuffleSplit in sklearn: http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedShuffleSplit.html
+
+
+
+
