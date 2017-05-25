@@ -60,7 +60,7 @@ Upon reviewing the FindLaw insider pay pdf, there was also one additional row wh
 
 #### Methodology for selection process
 
-The methodology I adopted for feature selection was a univariate selection process using select k-best from sklean. I used the k-best selection within a pipeline that included grid search to select the best features to use. The goal of this selection process was to maximise precision as well as recall.
+The methodology I adopted for feature selection was a univariate selection process using select k-best from sklean. I used the k-best selection within a pipeline that included grid search to select the best features to use. The goal of this selection process was to maximise precision as well as recall. While using select k-best what this did was to remove all but the k highest scoring features. To come up with the k values I used grid search which was driven by the f1 scoring estimator. This was intended to achieve my goal of maximsing precision as well as recall.
 
 #### Features Selected in POI identifier
 
@@ -144,9 +144,8 @@ When tuning my chosen decision tree algorithm, using grid search allowed me to c
 
 ## 5. What is validation, and what’s a classic mistake you can make if you do it wrong? How did you validate your analysis?  [relevant rubric item: “validation strategy”]
 
-In relation to machine learning, validation is a way to gauge how your algorithm is performing which is all based on how well you trained it. As we have seen in various examples throughout the machine learning course, the most common mistake is to test to algorithm on the same data that was used to train it. To ensure that was not the case within this project, we split the data into a training and testing data set with 70% being training data and 30% being testing data. This was undertaken using train_test_split and setting the test_size=0.3.
-
-While training and testing my algorithm, I used the tester.py to get a view on how my chosen algorithm was performing and validate my analysis. This was achieved in part using StratifiedShuffleSplit. The tester.py file also allowed me to validate the performance during tuning and ended up giving me the results I have detailed earlier.
+In relation to machine learning, validation is a way to truly substantiate how your algorithm is performing. As we have seen in various examples throughout the machine learning course, the most common mistake is to test to algorithm on the same data that was used to train it. The reason for using a validation set is to estimate metrics around your model’s performance. For example, in the context of this project we use it to look at the number of classification errors for the classifier we have built as well as recall and precision achieved.
+Within this project, we split the data into a training and testing data set with 70% being training data and 30% being testing data. This was undertaken using train_test_split and setting the test_size=0.3.
 
 ## 6. Give at least 2 evaluation metrics and your average performance for each of them.  Explain an interpretation of your metrics that says something human-understandable about your algorithm’s performance. [relevant rubric item: “usage of evaluation metrics”]
 
@@ -155,3 +154,4 @@ When evaluating my chosen algorithms performance, the 2 key evaluation metrics w
 - Recall: 0.64650	
 
 Putting these into context around the scope of our project, precision is the rate that our prediction for POI vs Non POI is correct when we actually guess that. When it comes to recall, this shows how often we guess POI vs Non POI when that guess actually occurred.
+As the tester.py is being used for the evaluation, the reason for using Stratified Shuffle Split within this was that it randomly creates multiple train/test sets of data. This is advantageous in regards to the Enron data set as it is relatively small so with Stratified Shuffle Split creating multiple data sets it allowed me to get more accurate results. Also factoring into this that the actual number of POI’s was extremely low compared to the other data set side made the use of Stratified Shuffle Split an even more ideal approach.
