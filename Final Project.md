@@ -154,4 +154,5 @@ When evaluating my chosen algorithms performance, the 2 key evaluation metrics w
 - Recall: 0.64650	
 
 Putting these into context around the scope of our project, precision is the rate that our prediction for POI vs Non POI is correct when we actually guess that. When it comes to recall, this shows how often we guess POI vs Non POI when that guess actually occurred.
+
 As the tester.py is being used for the evaluation, the reason for using Stratified Shuffle Split within this was that it randomly creates multiple train/test sets of data. This is advantageous in regards to the Enron data set as it is relatively small so with Stratified Shuffle Split creating multiple data sets it allowed me to get more accurate results. Also factoring into this that the actual number of POI’s was extremely low compared to the other data set side made the use of Stratified Shuffle Split an even more ideal approach.
